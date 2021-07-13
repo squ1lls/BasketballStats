@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://localhost:3000/stylesheet.css">
+    <script src="http://localhost:3000/update.js"></script>
+</head>
+<body>
+    <div id="content">
+        <label for="uuid" id="uuidPrompt">What is your UUID</label>
+        <textarea id="uuid"></textarea>
+        <label for="playerName" id="playerPrompt">What is your player's name</label>
+        <textarea id="playerName"></textarea>
+         <label for="ath">attempted threes</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="ath" id="ath">
+        <label for="atw">attempted twos</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="atw" id="atw">
+        <label for="mth">made threes</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="mth" id="mth">
+        <label for="mtw">made twos</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="mtw" id="mtw">
+        <label for="reb">rebounds</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="reb" id="reb">
+        <label for="sho">shots</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="sho" id="sho">
+        <label for="ste">steals</label>
+        <input type="radio" id="attemptedThrees" name="stat" value="ste" id="ste">
+        <label for="statVal" id="statValPrompt">What is the value of your stat?</label>
+        <textarea id="statVal"></textarea>
+
+
+        <button onClick="getGameInfo()" id="getGameInfo">Submit your update</button>
+    </div>
+</body>
+</html>
